@@ -1,9 +1,8 @@
-package com.company;
+﻿package com.company;
 import java.io.IOException;
 import java.util.Scanner;
 public class Zadanie9 {
-    public static final String ANSI_YELLOW = "\u001B[33m";
-    public static final String ANSI_RESET = "\u001B[0m";
+
     public static void main(String[] args) throws IOException {
         Scanner in = new Scanner(System.in);
         System.out.print("Введите число элементов массива ");
@@ -13,7 +12,7 @@ public class Zadanie9 {
             System.out.print("Введите " + i + " элемент массива ");
             nums[i] = in.nextInt();
         }
-        System.out.println(ANSI_YELLOW + "Сумма кубов элементов массива: " + sumOfCubes(nums) + ANSI_RESET);
+        System.out.println("Сумма кубов элементов массива: " + sumOfCubes(nums));
 
     }
     public static int sumOfCubes(int[] Array){

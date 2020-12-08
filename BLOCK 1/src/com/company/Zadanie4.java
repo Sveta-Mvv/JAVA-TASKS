@@ -1,10 +1,8 @@
-package com.company;
+﻿package com.company;
 
 import java.util.Scanner;
 
 public class Zadanie4 {
-    public static final String ANSI_CYAN = "\u001B[36m";
-    public static final String ANSI_RESET = "\u001B[0m";
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
@@ -15,9 +13,9 @@ public class Zadanie4 {
         System.out.print("Стоимость попытки ");
         double per3 = in.nextDouble();
         if (profitableGamble(per1, per2, per3)) {
-            System.out.println(ANSI_CYAN + "Большая вероятность выигрыша" + ANSI_RESET);
+            System.out.println("Большая вероятность выигрыша");
         } else {
-            System.out.println(ANSI_CYAN + "Маленькая вероятность выигрыша" + ANSI_RESET);
+            System.out.println("Маленькая вероятность выигрыша");
         }
     }
 
